@@ -17,7 +17,7 @@ spec:
         node-role: test  # This targets the test-labeled node
       containers:
         - name: my-app
-          image: your-dockerhub-username/your-image:latest
+          image: sachinbacha/medicure:latest
           ports:
             - containerPort: 9090
 
