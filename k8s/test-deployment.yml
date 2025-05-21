@@ -14,7 +14,7 @@ spec:
         app: my-app
     spec:
       nodeSelector:
-        node-role: test  # This targets the test-labeled node
+         env: test  # This targets the test-labeled node
       containers:
         - name: my-app
           image: sachinbacha/medicure:latest
