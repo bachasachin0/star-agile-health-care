@@ -17,7 +17,7 @@ spec:
         node-role: prod  # This targets nodes labeled as prod
       containers:
         - name: my-app
-          image: your-dockerhub-username/your-image:latest
+          image: sachinbacha/medicure:latest
           ports:
             - containerPort: 9090
 
