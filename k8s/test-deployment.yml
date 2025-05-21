@@ -1,4 +1,3 @@
-# test-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
         app: my-app
     spec:
       nodeSelector:
-        node-role: test-1 # Label you assign to the test node
+        node-role: test  # This targets the test-labeled node
       containers:
         - name: my-app
           image: your-dockerhub-username/your-image:latest
@@ -35,4 +34,4 @@ spec:
   ports:
     - port: 80
       targetPort: 9090
-      nodePort: 30090 
+      nodePort: 30090  # Test app accessible via http://<test-node-ip>:30090
